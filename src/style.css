@@ -1,26 +1,63 @@
 body{
-   font-family: Arial, Helvetica, sans-serif; 
-   
-
-
+  font-family: Arial, Helvetica, sans-serif; 
+  display: flex; 
+  justify-content:center;
+  background-color: rgb(5, 4, 117);
 }
-button{
-    background-color: aqua;
-    color: black;
-    padding: 10px;
-    border-radius: 2px;
 
+.box{
+  width: 450px;
+  height: 500px;
+  border-radius: 15px;
+  cursor: pointer;
+  animation-name:glow; /* Apply glow animation */
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: rgb(36, 79, 196);
 }
+
+
+/* Keyframes for glowing animation effect on .box */
+
+@keyframes glow {
+  0% {
+    /* No shadow and normal scale at start */
+    box-shadow: 0;
+    transform: scale(1);
+  }
+  50% {
+    /* Bright blue glow and slight scale up at midpoint */
+    box-shadow: 0 5px 30px rgba(100, 149, 237, 0.7);
+    transform: scale(1.09);
+  }
+  100% {
+    /* Subtle shadow and return to normal scale at end */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+  }
+}
+
 .r{
-    color:blue
+   color:blue;
 }
 .f{
-    color: blueviolet;
+   color: blueviolet;
 }
 .c{
-    color :rgb(238, 9, 150)
+   color :rgb(238, 9, 150);
 }
+
 h1{
-    text-align: center;
-    font-family:inherit;
+   text-align: center;
+   font-family:inherit;
+}
+
+.guestName{
+  width: 300px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor:pointer;
+  margin-bottom: 15px;
 }

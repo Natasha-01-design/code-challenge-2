@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guest list manager</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <h1>Event Guest List</h1>
-    <form id="guest-form">
-        <input type="text" id="guest-name" placeholder="Enter guest name" />
-        <select id="guest-category"> 
-            <option value="friend"class="r">friend</option>
-            <option value="family" class="f">family</option>
-            <option value="colleague"class="c">colleague</option>
-        </select>
-        <button  type="submit">Add guest</button>
-    </form>
+    <div class="box"></div>
+        <h1>Event Guest List</h1>
+        <!-- Guest form for adding new guests -->
+        <form id="guest-form">
+            <!-- Input for guest name -->
+            <input type="text" id="guest-name" placeholder="Enter guest name" class="guestName" />
+            <!-- Dropdown to select guest category -->
+            <select id="guest-category" class="guestName"> 
+                <option value="friend" class="r">friend</option>
+                <option value="family" class="f">family</option>
+                <option value="colleague" class="c">colleague</option>
+            </select>
+            <!-- Button to submit the form -->
+            <button type="submit" class="guestName">Add guest</button>
+        </form>
+    </div>
+   
+    <!-- Unordered list to display guest entries -->
     <ul id="guest-list"></ul>
-    <script src="src/index.js"></script>
+    
 </body>
+<!-- Link to external JavaScript file -->
+<script src="src/index.js"></script>
 </html>
