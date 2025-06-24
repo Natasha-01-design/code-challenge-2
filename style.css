@@ -2,7 +2,9 @@ body{
   font-family: Arial, Helvetica, sans-serif; 
   display: flex; 
   justify-content:center;
-  background-color: rgb(5, 4, 117);
+  background-color: rgb(77, 8, 134);
+  background-image:url( https://eventphotos.com.au/2022/wp-content/uploads/corporate-event-photography-800x530.webp);
+  background-size: cover;
 }
 
 .box{
@@ -14,11 +16,10 @@ body{
   animation-duration: 1.3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  background-color: rgb(36, 79, 196);
+  background-color: rgb(19, 32, 214);
 }
 
 
-/* Keyframes for glowing animation effect on .box */
 
 @keyframes glow {
   0% {
